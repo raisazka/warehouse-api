@@ -26,4 +26,6 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::get('/cart', 'CartController@getCart');
     Route::get('/workers', 'WorkerController@getAllWorker');
     Route::get('/installers', 'InstallerController@getAllInstaller');
+    Route::post('/stock-out', 'StockOutController@createStockOut');
+    Route::delete('/cart/{id}', 'CartController@deleteCart');
 });
