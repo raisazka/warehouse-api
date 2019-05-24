@@ -23,12 +23,17 @@ class StockInController extends Controller
             ]);
         }
 
+        $item = Item::where('item_id', $request->item_id)->first();
+
         StockIn::create([
             'user_id' => Auth::user()->id,
             'item_id' => $request->item_id,
             'qty' => $request->qty,
             'remarks' => $request->remarks
         ]);
+
+        $item->stock += $request->qty;
+        $item->save();
 
         return response()->json([
             'code' => 200,

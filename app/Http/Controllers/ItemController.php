@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Item;
 use App\ItemType;
 use Illuminate\Http\Request;
+use Validator;
 
 class ItemController extends Controller
 {
@@ -27,8 +28,20 @@ class ItemController extends Controller
 
     public function updateItemStock(Request $request, $id)
     {
+        $validator = Validator::make($request->all(), [
+            'qty' => 'required|numeric|min:1'
+        ]);
+        
         $item = Item::where('id', $id)->first();
-        $item->stock = $request->stock;
+
+        if($validator->fails()){
+            return response()->json([
+                'code' => 400,
+                'message' => $validator->errors()->first()
+            ]);
+        }
+
+        $item->stock = $request->qty;
         $item->save();
 
         return response()->json([

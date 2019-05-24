@@ -39,6 +39,9 @@ class StockOutController extends Controller
                 'qty' => $cart->qty,
                 'remarks' => $cart->remarks
             ]);
+            $item = Item::where('item_id', $cart->item_id)->first();
+            $item -= $cart->qty;
+            $item->save();
         }
         Cart::where('user_id', Auth::user()->id)->delete();
         return response()->json([
