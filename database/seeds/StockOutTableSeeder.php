@@ -15,7 +15,7 @@ class StockOutTableSeeder extends Seeder
             'user_id' => 1,
             'worker_id' => 2,
             'installer_id' => 1,
-            'created_at' => '2019-05-24'
+            'created_at' => '2019-05-29'
         ]);
 
         DB::table('stock_outs')->insert([

@@ -13,11 +13,13 @@ class StockInsExport implements FromCollection, WithHeadings
     */
     protected $dateStart;
     protected $dateEnd;
+    protected $warehouseId;
 
-    public function __construct($dateStart, $dateEnd)
+    public function __construct($dateStart, $dateEnd, $warehouseId)
     {
         $this->dateStart = $dateStart;
         $this->dateEnd = $dateEnd;
+        $this->warehouseId = $warehouseId;
     }
 
     public function collection()
@@ -28,6 +30,7 @@ class StockInsExport implements FromCollection, WithHeadings
                 ->join('items', 'stock_ins.item_id', '=', 'items.id')
                 ->select('stock_ins.id','users.name', 'items.item_description', 'qty', 'stock_ins.remarks', DB::raw('convert(varchar, stock_ins.created_at, 107) AS TRDATE'))
                 ->whereBetween('stock_ins.created_at', [$this->dateStart, $this->dateEnd])
+                ->where('items.warehouse_id', $this->warehouseId)
                 ->get();
     }
 

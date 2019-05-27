@@ -29,6 +29,7 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::post('/stock-out', 'StockOutController@createStockOut');
     Route::delete('/cart/{id}', 'CartController@deleteCart');
 });
-Route::get('/get-stock-in', 'ReportController@getWeeklyStockInReport');
-Route::get('/get-stock-out','ReportController@getWeeklyStockOutReport');
-Route::get('/monthly-report', 'ReportController@getMonthlyReport');
+Route::get('/get-stock-in/{warehouseId}', 'ReportController@getWeeklyStockInReport');
+Route::get('/get-stock-out/{warehouseId}','ReportController@getWeeklyStockOutReport');
+Route::get('/monthly-report/{warehouseId}', 'ReportController@getMonthlyReport');
+Route::get('/adjustment-report', 'ReportController@getAdjustmentReport');

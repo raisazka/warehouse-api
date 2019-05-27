@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Cart;
 use Validator;
 use Auth;
+use App\Item;
 use Illuminate\Http\Request;
 
 class CartController extends Controller

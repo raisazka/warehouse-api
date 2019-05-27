@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class ItemsTableSeeder extends Seeder
+class ItemWarehouse2TableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +17,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -26,7 +26,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -35,7 +35,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -44,7 +44,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -53,7 +53,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -62,7 +62,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -71,7 +71,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -80,7 +80,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -89,7 +89,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -98,7 +98,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -107,7 +107,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -116,7 +116,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -125,7 +125,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -134,7 +134,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -143,7 +143,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -152,7 +152,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -161,7 +161,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -170,7 +170,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -179,7 +179,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -188,7 +188,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -197,7 +197,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -206,7 +206,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
         DB::table('items')->insert([
             'item_type_id' => '8',
@@ -214,7 +214,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
         DB::table('items')->insert([
             'item_type_id' => '9',
@@ -222,7 +222,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -231,7 +231,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -240,7 +240,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -249,7 +249,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -258,7 +258,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -267,7 +267,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -276,7 +276,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -285,7 +285,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -294,7 +294,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -303,7 +303,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         for($i = 1; $i <= 7; $i++){
@@ -313,7 +313,7 @@ class ItemsTableSeeder extends Seeder
                 'size' => '-',
                 'expiry_date' => '2019-12-20',
                 'stock' => 1,
-                'warehouse_id' => 1
+                'warehouse_id' => 2
             ]);
         }
 
@@ -323,7 +323,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -332,7 +332,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -341,7 +341,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         for($i=10; $i <= 110; $i+=5){
@@ -351,7 +351,7 @@ class ItemsTableSeeder extends Seeder
                 'size' => '-',
                 'expiry_date' => '2019-12-20',
                 'stock' => 1,
-                'warehouse_id' => 1
+                'warehouse_id' => 2
             ]);
         }
 
@@ -361,7 +361,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -370,7 +370,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -379,7 +379,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -388,7 +388,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -397,7 +397,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -406,7 +406,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -415,7 +415,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -424,7 +424,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -433,7 +433,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -442,7 +442,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -451,7 +451,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
 
         DB::table('items')->insert([
@@ -460,7 +460,7 @@ class ItemsTableSeeder extends Seeder
             'size' => '-',
             'expiry_date' => '2019-12-20',
             'stock' => 1,
-            'warehouse_id' => 1
+            'warehouse_id' => 2
         ]);
     }
 }

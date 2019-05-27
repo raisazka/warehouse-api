@@ -13,11 +13,13 @@ class TransactionExport implements WithMultipleSheets
 
     protected $dateStart;
     protected $dateEnd;
+    protected $warehouseId;
 
-    public function __construct($dateStart, $dateEnd)
+    public function __construct($dateStart, $dateEnd, $warehouseId)
     {
         $this->dateStart = $dateStart;
         $this->dateEnd = $dateEnd;
+        $this->warehouseId = $warehouseId;
     }
 
     /**
@@ -27,8 +29,8 @@ class TransactionExport implements WithMultipleSheets
     public function sheets(): array
     {
         $sheets = [];
-        $sheets[] = new StockInsExport($this->dateStart, $this->dateEnd);
-        $sheets[] = new StockOutsExport($this->dateStart, $this->dateEnd);
+        $sheets[] = new StockInsExport($this->dateStart, $this->dateEnd, $this->warehouseId);
+        $sheets[] = new StockOutsExport($this->dateStart, $this->dateEnd, $this->warehouseId);
     
         return $sheets;
     }
