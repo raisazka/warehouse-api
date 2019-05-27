@@ -33,6 +33,15 @@ class CartController extends Controller
             ]);
         }
 
+        $item = Item::where('id', $request->item_id)->first();
+
+        if($item->stock == 0 || $item->stock < $request->qty){
+            return response()->json([
+                'code' => 400,
+                'message' => 'Stock Out is Prohibited. Unsufficient Stock'
+            ]);
+        }
+
         Cart::create([
             'user_id' => Auth::user()->id,
             'item_id' => $request->item_id,

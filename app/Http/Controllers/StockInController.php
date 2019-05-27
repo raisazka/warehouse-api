@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\StockIn;
+use App\Item;
 use Auth;
 use Validator;
 use Illuminate\Http\Request;
@@ -23,7 +24,7 @@ class StockInController extends Controller
             ]);
         }
 
-        $item = Item::where('item_id', $request->item_id)->first();
+        $item = Item::where('id', $request->item_id)->first();
 
         StockIn::create([
             'user_id' => Auth::user()->id,

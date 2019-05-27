@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Item;
 use App\ItemType;
+use App\AdjustStock;
 use Illuminate\Http\Request;
 use Validator;
+use Auth;
 
 class ItemController extends Controller
 {
-    public function getAllItems(Request $request)
+    public function getItems($warehouseId)
     {
 
-        $items = Item::all();
+        $items = Item::where('warehouse_id', $warehouseId)->get();
         return response()->json([
             'code' => 200,
             'items' => $items
@@ -40,10 +42,15 @@ class ItemController extends Controller
                 'message' => $validator->errors()->first()
             ]);
         }
+        $adjust = new AdjustStock;
+        $adjust->user_id = Auth::user()->id;
+        $adjust->old_stock = $item->stock;
+        $adjust->new_stock = $request->qty;
+        $adjust->save();
 
         $item->stock = $request->qty;
-        $item->save();
 
+        $item->save();
         return response()->json([
             'code' => 200,
             'message' => 'Success Update Item Stock'

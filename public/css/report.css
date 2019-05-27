@@ -1,0 +1,29 @@
+.title{
+    margin-top: 30px;
+}
+
+body{
+    background-color: white;
+}
+
+p{
+    margin: 0;
+}
+
+hr{
+    height: 3px;
+    background:black;
+}
+
+.table{
+    margin-top: 10px;
+}
+
+
+table.table > thead > tr > th{
+    border-top: none;
+}
+
+table.table > tbody > tr > td{
+    border : none;
+}

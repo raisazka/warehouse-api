@@ -17,6 +17,8 @@ class CreateItemsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('item_type_id')->unsigned();
             $table->foreign('item_type_id')->references('id')->on('item_types');
+            $table->bigInteger('warehouse_id')->unsigned();
+            $table->foreign('warehouse_id')->references('id')->on('warehouses');
             $table->string('item_description');
             $table->string('size');
             $table->date('expiry_date');

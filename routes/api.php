@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 Route::post('login', 'AuthApiController@login');
 Route::group(['middleware' => 'auth:api'], function() {
     Route::get('logout', 'AuthApiController@logout');
-    Route::get('/items', 'ItemController@getAllItems');
+    Route::get('/items/warehouse/{warehouseId}', 'ItemController@getItems');
     Route::get('/items/{id}', 'ItemController@showItem');
     Route::patch('/items/{id}', 'ItemController@updateItemStock');
     Route::get('/item-types', 'ItemController@getItemType');
@@ -29,3 +29,6 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::post('/stock-out', 'StockOutController@createStockOut');
     Route::delete('/cart/{id}', 'CartController@deleteCart');
 });
+Route::get('/get-stock-in', 'ReportController@getWeeklyStockInReport');
+Route::get('/get-stock-out','ReportController@getWeeklyStockOutReport');
+Route::get('/monthly-report', 'ReportController@getMonthlyReport');

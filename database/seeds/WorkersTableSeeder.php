@@ -12,18 +12,68 @@ class WorkersTableSeeder extends Seeder
     public function run()
     {
         DB::table('workers')->insert([
-            'worker_name' => 'Rais',
-            'worker_pst' => 'Manager',
+            'worker_name' => 'Manuel',
+            'worker_pst' => '-',
         ]);
 
         DB::table('workers')->insert([
-            'worker_name' => 'Yosef',
-            'worker_pst' => 'Staff',
+            'worker_name' => 'Rico',
+            'worker_pst' => 'Aminur',
         ]);
 
         DB::table('workers')->insert([
-            'worker_name' => 'Wesley',
-            'worker_pst' => 'Staff',
+            'worker_name' => 'Tazul',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Mohern',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Ali',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Juyel',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Marsud',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Mamun',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Nazmul',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Farid',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Younus',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Delowar',
+            'worker_pst' => '-',
+        ]);
+
+        DB::table('workers')->insert([
+            'worker_name' => 'Kuruni',
+            'worker_pst' => '-',
         ]);
     }
 }
