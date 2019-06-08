@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Exports\StockInsExport;
 use App\Exports\StockOutsExport;
 use App\Exports\TransactionExport;
+use App\Exports\AdjustmentExport;
 use Carbon\Carbon;
 use Excel;
 use Maatwebsite\Excel\HttpFoundation\BinaryFileResponse;

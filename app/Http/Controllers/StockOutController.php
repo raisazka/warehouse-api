@@ -15,8 +15,7 @@ class StockOutController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
-            'worker_id' => 'required',
-            'installer_id' => 'required'
+            'staff_id' => 'required'
         ]);
 
 
@@ -31,8 +30,7 @@ class StockOutController extends Controller
         }
 
         $stockOut->user_id = Auth::user()->id;
-        $stockOut->worker_id = $request->worker_id;
-        $stockOut->installer_id = $request->installer_id;
+        $stockOut->staff_id = $request->staff_id;
         $stockOut->save();
         foreach($carts as $cart){
             $stockOut->stockOutDetails()->create([

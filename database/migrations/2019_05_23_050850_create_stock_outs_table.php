@@ -17,10 +17,8 @@ class CreateStockOutsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->bigInteger('worker_id')->unsigned();
-            $table->foreign('worker_id')->references('id')->on('workers');
-            $table->bigInteger('installer_id')->unsigned();
-            $table->foreign('installer_id')->references('id')->on('installers');
+            $table->bigInteger('staff_id')->unsigned();
+            $table->foreign('staff_id')->references('id')->on('staff');
             $table->timestamps();
         });
     }

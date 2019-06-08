@@ -4,8 +4,9 @@ namespace App\Exports;
 
 use App\AdjustStock;
 use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\WithHeadings;
 
-class AdjustmentExport implements FromCollection
+class AdjustmentExport implements FromCollection, WithHeadings
 {
     /**
     * @return \Illuminate\Support\Collection
@@ -13,5 +14,15 @@ class AdjustmentExport implements FromCollection
     public function collection()
     {
         return AdjustStock::all();
+    }
+
+    public function headings(): array
+    {
+        return [
+            'ID',
+            'User ID',
+            'Qty Old',
+            'Qty New',
+        ];
     }
 }

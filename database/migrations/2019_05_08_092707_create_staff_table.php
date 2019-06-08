@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInstallersTable extends Migration
+class CreateStaffTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateInstallersTable extends Migration
      */
     public function up()
     {
-        Schema::create('installers', function (Blueprint $table) {
+        Schema::create('staff', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('installer_name');
-            $table->string('installer_pst');
+            $table->string('name');
+            $table->string('position');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateInstallersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('installers');
+        Schema::dropIfExists('staff');
     }
 }

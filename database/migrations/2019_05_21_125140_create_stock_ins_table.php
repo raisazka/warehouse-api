@@ -17,10 +17,8 @@ class CreateStockInsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->bigInteger('item_id')->unsigned();
-            $table->foreign('item_id')->references('id')->on('items');
-            $table->integer('qty');
-            $table->string('remarks')->nullable();
+            $table->bigInteger('staff_id')->unsigned();
+            $table->foreign('staff_id')->references('id')->on('staff');
             $table->timestamps();
         });
     }

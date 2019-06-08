@@ -20,8 +20,7 @@ class ItemController extends Controller
             'items' => $items
         ]);
     }
-
-
+    
     public function showItem($id)
     {
         $item = Item::where('id', $id)->first();
@@ -66,9 +65,9 @@ class ItemController extends Controller
         ]);
     }
 
-    public function getItem($id)
+    public function getItem($id, $warehouseId)
     {
-        $item = Item::where('item_type_id', $id)->get();
+        $item = Item::where('item_type_id', $id)->where('warehouse_id', $id)->get();
         return response()->json([
             'code' => 200,
             'items' => $item

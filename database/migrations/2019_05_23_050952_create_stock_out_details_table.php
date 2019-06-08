@@ -17,8 +17,7 @@ class CreateStockOutDetailsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('stock_out_id')->unsigned();
             $table->foreign('stock_out_id')->references('id')->on('stock_outs');
-            $table->bigInteger('item_id')->unsigned();
-            $table->foreign('item_id')->references('id')->on('items');
+            $table->string('item_id')->references('id')->on('items');
             $table->integer('qty');
             $table->string('remarks')->nullable();
             $table->timestamps();

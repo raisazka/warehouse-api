@@ -10,6 +10,11 @@ class StockIn extends Model
         'user_id', 'item_id', 'qty', 'remarks'
     ];
 
+    public function stockInDetails()
+    {
+        return $this->hasMany('App\StockInDetails');
+    }
+
     public function users()
     {
         return $this->belongsTo('App\User', 'user_id');

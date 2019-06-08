@@ -2,24 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Cart;
+use Illuminate\Http\Request;
 use Validator;
 use Auth;
 use DB;
 use App\Item;
-use Illuminate\Http\Request;
+use App\CartStockIn;
 
-class CartController extends Controller
+class CartStockInController extends Controller
 {
     public function getCart()
     {
-        $carts = DB::table('carts as cs')
+        $carts = DB::table('cart_stock_ins as cs')
                 ->join('items as i', 'cs.item_id', 'i.id')
                 ->join('users as u', 'cs.user_id', 'u.id')
                 ->select('i.id','i.item_description as item_name', 'cs.qty', 'cs.remarks')
                 ->where('u.id', Auth::user()->id)
                 ->get();
-                
         return response()->json([
             'code' => 200,
             'carts' => $carts
@@ -50,7 +49,7 @@ class CartController extends Controller
             ]);
         }
 
-        Cart::create([
+        CartStockIn::create([
             'user_id' => Auth::user()->id,
             'item_id' => $request->item_id,
             'qty' => $request->qty,
@@ -65,11 +64,10 @@ class CartController extends Controller
 
     public function deleteCart($id)
     {
-        Cart::destroy($id);
+        CartStockIn::destroy($id);
         return response()->json([
             'code' => 200,
             'message' => 'Success Delete Cart Item'
         ]);
     }
-
 }
